@@ -1,0 +1,44 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+##############################################################
+
+mega2560.name=2boots ATmega2560 16MHz CS=53(PB0)
+
+mega2560.upload.protocol=stk500v1
+mega2560.upload.maximum_size=258048
+mega2560.upload.speed=115200
+
+mega2560.bootloader.low_fuses=0xFF
+mega2560.bootloader.high_fuses=0xD8
+mega2560.bootloader.extended_fuses=0xFD
+mega2560.bootloader.path=2boots/build
+mega2560.bootloader.file=2boots-ArduinoMegaPro-atmega2560-8000000L-PB0.hex
+mega2560.bootloader.unlock_bits=0x3F
+mega2560.bootloader.lock_bits=0x0F
+
+mega2560.build.mcu=atmega2560
+mega2560.build.f_cpu=16000000L
+mega2560.build.core=arduino:arduino
+mega2560.build.variant=arduino:mega
+
+##############################################################
+
+atmega328.name=2boots ATmega328p
+
+atmega328.upload.protocol=stk500v1
+atmega328.upload.maximum_size=30720
+atmega328.upload.speed=57600
+
+atmega328.bootloader.low_fuses=0xFF
+atmega328.bootloader.high_fuses=0xDA
+atmega328.bootloader.extended_fuses=0x05
+atmega328.bootloader.path=avr_boot-master
+atmega328.bootloader.file=avr_boot.hex
+atmega328.bootloader.unlock_bits=0x3F
+atmega328.bootloader.lock_bits=0x0F
+
+atmega328.build.mcu=atmega328p
+atmega328.build.f_cpu=16000000L
+atmega328.build.core=arduino:arduino
+atmega328.build.variant=arduino:standard
+
